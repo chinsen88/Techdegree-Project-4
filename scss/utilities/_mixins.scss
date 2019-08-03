@@ -1,0 +1,61 @@
+// --- MIXINS --- //
+
+
+@mixin center($t : 0, $b : 0) {
+    margin: $t auto $b;
+    display:block;
+    @content;
+}
+
+@mixin roundy {
+  border-radius: 5px;
+}
+
+
+// Links
+
+@mixin links {
+  color: $color-secondary;
+  font-weight:bold;
+  text-decoration: none;
+  @content;
+}
+
+// Maps for theme colors
+
+@mixin theme-colors($map) {
+  @each $theme, $color in $map {
+    &--#{$theme}.theme__colors {
+      background-color: $color;
+    }
+  }
+}
+
+// Create a flex container
+
+@mixin flexy(
+  $dis: flex,
+  $dir: null,
+  $wra: null,
+  $jus: null) {
+    display:$dis;
+    flex-direction:$dir;
+    flex-wrap:$wra;
+    justify-content:$jus;
+}
+        
+// Media queries
+        
+@mixin mquery($break) {
+ 
+ @if $break == 'm'{
+    @media (max-width:$break-m) {
+    @content
+  } 
+ }
+  @else if $break == 'd' {
+    @media (min-width:$break-d) {
+    @content
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// --- BASE --- //
+
+* {
+  box-sizing: border-box;
+}
+
+.container ul { 
+  
+  
+  li {
+    @include roundy;
+    text-align:center;
+    padding:10px;
+      
+    &:first-child {
+        background-color: $color-primary;
+        a {
+          color:$white;
+        }
+      }
+    a {
+        @include links;
+        color:$color-text;
+        font-weight:$normal;
+      }
+    }
+  @include mquery('d'){
+    @include flexy($jus: center, $dir: row);
+    height: 122px;
+    align-items: center;
+  }
+}
+
+p {
+  margin-bottom: 1.25em;
+  line-height:1.5;
+}

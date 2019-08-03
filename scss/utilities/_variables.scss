@@ -1,0 +1,50 @@
+// --- VARIABLES --- //
+
+//Colours
+
+$color-primary: #58e1c1; // light green
+$color-secondary: #51ddfc; // baby blue
+$color-shade: #ddd;
+$white: #ffffff;
+
+$color-text: #808080;
+
+$theme-green: #63cc82;
+$theme-red: #e4757a;
+$theme-orange: #fd7856;
+$theme-purple: #927bc1;
+
+$interface-colors-btn: (
+  default : $color-secondary,
+  success : $theme-green,
+  error   : $theme-red,
+  warning : $theme-orange,
+  info    : $theme-purple,
+);
+                                          
+                                          
+$interface-colors-grid: (                                          
+  1   : $color-primary,
+  2   : $color-primary,
+  3   : adjust-color($color-primary, $red:134, $green: -47, $blue: 45),
+  4   : adjust-color($color-primary, $red:-36, $green: 5, $blue: 60),
+  5   : adjust-color($color-primary, $red:48, $green: -8, $blue: -33),
+  6   : adjust-color($color-primary, $red:-25, $green: -54, $blue: 9),
+  7   : adjust-color($color-primary, $red:148, $green: -66, $blue: -30),
+  8   : adjust-color($color-primary, $red:165, $green: -66, $blue: -60),
+  9   : $color-primary,
+  10  : $color-primary,
+  11  : $color-primary,
+  12  : adjust-color($color-primary, $red:40, $green: 7, $blue: 16)
+);
+
+
+// Fonts
+$font-stack-primary: 'Helvetica Neue', sans-serif;
+$normal: 400;
+$bold: 600;
+$light: 300;
+
+// Breakpoints
+$break-m: 480px;
+$break-d: 768px;

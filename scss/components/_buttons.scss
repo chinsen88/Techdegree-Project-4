@@ -1,0 +1,18 @@
+// --- BUTTONS --- //
+
+[class^=btn--] {
+    width: 100%;
+    margin: 0.75em auto;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    color: $white;
+    @include mquery('d') {
+      margin-left: 30px; 
+      margin-right: 30px; 
+    }
+}
+
+.btn {
+ @include theme-colors($interface-colors-btn);  
+}

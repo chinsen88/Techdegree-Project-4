@@ -1,0 +1,22 @@
+// --- IMAGES --- //
+
+[class^="img--"] {
+  @include center($b:20px);
+  padding:10px;
+  max-width:100%;
+  display:block;
+}
+
+
+.img {
+  
+  &--logo {
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+  
+  &--frame {
+    max-width: 100%;
+    border: 1px solid $color-shade;
+  }
+}
